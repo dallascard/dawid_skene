@@ -1,11 +1,35 @@
 """
+Copyright (C) 2014 Dallas Card
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this
+software and associated documentation files (the "Software"), to deal in the Software
+without restriction, including without limitation the rights to use, copy, modify, merge,
+publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons
+ to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
+FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+
+Description:
 Given unreliable observations of patient classes by multiple observers,
 determine the most likely true class for each patient, class marginals,
 and  individual error rates for each observer, using Expectation Maximization
-See: Dawid and Skene (1979). Maximum Likelihood Estimation of Observer
+
+
+References:
+( Dawid and Skene (1979). Maximum Likelihood Estimation of Observer
 Error-Rates Using the EM Algorithm. Journal of the Royal Statistical Society.
 Series C (Applied Statistics), Vol. 28, No. 1, pp. 20-28. 
 """
+
 import numpy as np
 
 """
